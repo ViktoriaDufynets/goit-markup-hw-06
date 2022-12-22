@@ -263,25 +263,28 @@ input {
 .vector1 {
         position: absolute;
         left: 16px;
+        bottom: 9px;
+        fill: #2E2F42;
+}
+.vector2 {
+        position: absolute;
+        left: 16px;
         bottom: 7px;
         fill: #2E2F42;
 }
-/*.vector2 {
-        position: absolute;
-        left: 16px;
-        bottom: 11px;
-        fill: #2E2F42;
-}*/
 input:hover, textarea:hover {
         color: #2E2F42;
         border: 1px solid #4D5AE5;
 }
 input:focus {
-        border: transparent;
-        outline: 1px solid #4D5AE5;
+        border: 1px solid #4D5AE5;
+        outline: none;
 }
 
 .form-field:focus-within > .vector1 {
+        fill: #4D5AE5;
+}
+.form-field:focus-within>.vector2 {
         fill: #4D5AE5;
 }
 .form-field {
@@ -345,7 +348,7 @@ textarea::placeholder {
 }
 .checkbox:checked + .checkbox-icon {
         background-color: #4D5AE5;
-        background-image: url(/images/checkbox.svg);
+        background-image: url(../images/checkbox.svg);
         background-size: contain;
         border: 1.25px solid #404BBF;
         border-radius: 2px;
@@ -670,7 +673,6 @@ span {
         margin-top: 0;
         margin-bottom: 0;
         width: 264px;
-        height: 72px;
 }
 .customers {
         display: flex;
@@ -815,7 +817,6 @@ span {
         position: relative;
 }
 .work {
-        text-decoration: none;
         color: #4D5AE5;
 }
 .overlay {
